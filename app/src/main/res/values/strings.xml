@@ -13,4 +13,11 @@
     <string name="instructions_body">"In the following screen you will see a list of shoes you've added. You will click \"add shoe\" button to add shoe details in \"add shoe details\" screen. "</string>
     <string name="shoe_list">Shoe List</string>
     <string name="shoe_list_header">Shoes</string>
+    <string name="add_shoe_details">Add Shoe Details</string>
+    <string name="add_shoe_name_hint">enter shoe name</string>
+    <string name="add_shoe_company">enter shoe company</string>
+    <string name="enter_shoe_size_hint">enter shoe size</string>
+    <string name="enter_shoe_description_hint">enter shoe description</string>
+    <string name="shoe_detail_cancel_button">Cancel</string>
+    <string name="shoe_detail_save_button">Save</string>
 </resources>
