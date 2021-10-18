@@ -12,4 +12,5 @@
     <string name="instructions_header">Instructions</string>
     <string name="instructions_body">"In the following screen you will see a list of shoes you've added. You will click \"add shoe\" button to add shoe details in \"add shoe details\" screen. "</string>
     <string name="shoe_list">Shoe List</string>
+    <string name="shoe_list_header">Shoes</string>
 </resources>
