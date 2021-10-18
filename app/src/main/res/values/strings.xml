@@ -6,4 +6,7 @@
     <string name="password_hint">"enter password "</string>
     <string name="sign_up_button">SignUp</string>
     <string name="login_button">LogIn</string>
+    <string name="welcome_header">Welcome to ShoeStore</string>
+    <string name="welcome_body">In this app you will be able to store a list of shoes for your customers to view. You will input shoe details of shoes you are looking to sell to your customers. Move on to instructions to learn more about starting your inventory!</string>
+    <string name="to_instructions_button">Instructions</string>
 </resources>
