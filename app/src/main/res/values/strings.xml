@@ -9,4 +9,7 @@
     <string name="welcome_header">Welcome to ShoeStore</string>
     <string name="welcome_body">In this app you will be able to store a list of shoes for your customers to view. You will input shoe details of shoes you are looking to sell to your customers. Move on to instructions to learn more about starting your inventory!</string>
     <string name="to_instructions_button">Instructions</string>
+    <string name="instructions_header">Instructions</string>
+    <string name="instructions_body">"In the following screen you will see a list of shoes you've added. You will click \"add shoe\" button to add shoe details in \"add shoe details\" screen. "</string>
+    <string name="shoe_list">Shoe List</string>
 </resources>
