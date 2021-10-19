@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
         Timber.plant(Timber.DebugTree())
 //        use DataBindingUtil to set content view
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
