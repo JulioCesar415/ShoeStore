@@ -18,8 +18,10 @@ import com.udacity.shoestore.databinding.FragmentLoginBinding
  * create an instance of this fragment.
  */
 class LoginFragment : Fragment() {
+
 //    initialize binding
     private lateinit var binding: FragmentLoginBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
