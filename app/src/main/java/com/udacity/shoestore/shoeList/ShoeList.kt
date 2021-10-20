@@ -6,9 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
+import com.udacity.shoestore.ShoeViewModel
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import com.udacity.shoestore.models.ShoeViewModelFactory
 
 
 /**
@@ -17,6 +20,12 @@ import com.udacity.shoestore.databinding.FragmentShoeListBinding
  * create an instance of this fragment.
  */
 class ShoeList : Fragment() {
+
+//    initiate viewModel
+    private lateinit var viewModel: ShoeViewModel
+
+//    initiate viewModelFactory
+    private lateinit var viewModelFactory: ShoeViewModelFactory
 
 //    initialze binding
     private lateinit var binding: FragmentShoeListBinding
@@ -32,6 +41,15 @@ class ShoeList : Fragment() {
         binding.addShoeFAB.setOnClickListener {
             findNavController().navigate(ShoeListDirections.actionShoeListToShoeDetail())
         }
+
+//        let fragment know about vieModel
+        binding.shoeViewModel = viewModel
+
+//        create a viewModelFactory
+        viewModelFactory = ShoeViewModelFactory(shoes = String())
+
+//        reference to viewModel
+        viewModel = ViewModelProvider(this, viewModelFactory).get(ShoeViewModel::class.java)
 
         return binding.root
     }
