@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".shoeDetail.ShoeDetail">
 
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -25,6 +31,7 @@
 
         <EditText
             android:id="@+id/addShoeNameEditText"
+            android:text="@={shoe.name}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -39,6 +46,7 @@
 
         <EditText
             android:id="@+id/addShoeCompanyEditText"
+            android:text="@={shoe.company}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -53,6 +61,7 @@
 
         <EditText
             android:id="@+id/addShoeSizeEditText"
+            android:text="@={`` + shoe.size}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -67,6 +76,7 @@
 
         <EditText
             android:id="@+id/addShoeDescriptionEditText"
+            android:text="@={shoe.description}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
