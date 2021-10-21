@@ -20,10 +20,6 @@ import com.udacity.shoestore.databinding.FragmentShoeListBinding
  */
 class ShoeList : Fragment() {
 
-//    initiate viewModel
-    private lateinit var viewModel: ShoeViewModel
-
-
 //    initialze binding
     private lateinit var binding: FragmentShoeListBinding
 
@@ -38,9 +34,6 @@ class ShoeList : Fragment() {
         binding.addShoeFAB.setOnClickListener {
             findNavController().navigate(ShoeListDirections.actionShoeListToShoeDetail())
         }
-
-//        let fragment know about vieModel
-        binding.shoeViewModel = viewModel
 
 
         return binding.root

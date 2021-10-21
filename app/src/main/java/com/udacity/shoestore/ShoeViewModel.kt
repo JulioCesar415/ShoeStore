@@ -3,12 +3,10 @@ package com.udacity.shoestore
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.navigation.Navigation.findNavController
 import com.udacity.shoestore.models.Shoe
-import com.udacity.shoestore.shoeList.ShoeListDirections
 
 
-class ShoeViewModel(shoes : String) : ViewModel(){
+class ShoeViewModel() : ViewModel(){
 
     private val _shoes = MutableLiveData<List<Shoe>>()
     val shoes : LiveData<List<Shoe>>
