@@ -45,7 +45,7 @@ class ShoeList : Fragment() {
             for (shoe in shoes) Timber.i(shoe.name)
         })
 
-        binding.shoesLayout.addView()
+//        binding.shoesLayout.addView()
 
         return binding.root
     }

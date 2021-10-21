@@ -38,6 +38,8 @@ class ShoeDetail : Fragment() {
             findNavController().navigate(ShoeDetailDirections.actionShoeDetailToShoeList())
         }
 
+        binding.shoe = Shoe("", 0.0, "", "", mutableListOf())
+
 //        navigate to shoe list fragment when save button is clicked
         binding.shoeDetailSaveButton.setOnClickListener {
             val shoe: Shoe = binding.shoe!!
