@@ -46,6 +46,7 @@ class ShoeList : Fragment() {
         })
 
 //        binding.shoesLayout.addView()
+        binding.shoeViewModel = model
 
         return binding.root
     }
